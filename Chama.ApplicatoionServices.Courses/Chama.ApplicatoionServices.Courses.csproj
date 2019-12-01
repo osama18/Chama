@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Chama.Common.Logging" Version="1.0.1" />
+    <PackageReference Include="Chama.Dal.GenerIcRepository" Version="1.0.1" />
+    <PackageReference Include="Chamma.Common.Settings" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>

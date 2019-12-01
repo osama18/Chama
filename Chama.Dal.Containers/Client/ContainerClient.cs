@@ -38,8 +38,8 @@ namespace Chama.Dal.Containers.Client
 
                 var result = await dBClient.GetDataBase( new GetDataBaseRequest { Name = request.DbName });
 
-                if (result.Database == null)
-                    throw new InvalidOperationException($"No Db found with name {request.DbName}");
+                if (!result.Success)
+                    throw new ArgumentException($"No Db found for {request.DbName}");
 
                 var container = await result.Database.CreateContainerAsync(containerDef,request.Throughput ?? DefaultThroughput);
                 
@@ -73,13 +73,11 @@ namespace Chama.Dal.Containers.Client
 
                 var result = await dBClient.GetDataBase(new GetDataBaseRequest { Name = request.DbName });
 
-                if (result.Database == null)
-                    throw new InvalidOperationException($"No Db found with name {request.DbName}");
+                if (!result.Success)
+                    throw new ArgumentException($"No Db found for {request.DbName}");
 
                 var dataBase = result.Database.GetContainer(request.ConatinerId);
 
-                if (dataBase == null)
-                    throw new InvalidOperationException($"No Db found with name {request.DbName}");
 
                 await dataBase.DeleteContainerAsync();
 
@@ -108,6 +106,9 @@ namespace Chama.Dal.Containers.Client
                     throw new ArgumentNullException($"request is null");
 
                 var result = await dBClient.GetDataBase(new GetDataBaseRequest { Name = request.DbName });
+
+                if (!result.Success)
+                    throw new ArgumentException($"No Db found for {request.DbName}");
 
                 var iterators = result.Database.GetContainerQueryIterator<ContainerProperties>();
 
@@ -140,6 +141,10 @@ namespace Chama.Dal.Containers.Client
                     throw new ArgumentNullException($"request is null");
 
                 var result = await dBClient.GetDataBase(new GetDataBaseRequest { Name = request.DbName });
+
+                if (!result.Success)
+                    throw new ArgumentException($"No Db found for {request.DbName}");
+
                 var container = result.Database.GetContainer(request.ContainerId);
 
                 return new GetContainerResponse

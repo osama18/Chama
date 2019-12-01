@@ -1,14 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using GenerIcRepository;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Chama.Dal.Documents.Model
+namespace Chama.Dal.CourseSubsribtionServices.Model
 {
-    public class Course
+    public class Course : EtagEntity
     {
- 
-
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
@@ -19,7 +18,7 @@ namespace Chama.Dal.Documents.Model
         public IEnumerable<Guid> StudentsIds { get; set; }
 
         [JsonProperty(PropertyName = "Capacity")]
-        public IEnumerable<Guid> Capacity { get; set; }
+        public int Capacity { get; set; }
 
     }
 }

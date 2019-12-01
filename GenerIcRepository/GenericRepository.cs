@@ -9,7 +9,7 @@ using System.Web.Http.OData.Formatter;
 
 namespace GenerIcRepository
 {
-    internal class GenericRepository<T> where T: EtagEntity
+    internal class GenericRepository<T> : IGenericRepository<T> where T: EtagEntity
     {
         private readonly ILogger logger;
         private readonly IContainerClient containerClient;
@@ -39,21 +39,22 @@ namespace GenerIcRepository
             return result;
         }
 
-        public async Task<T> Retrieve(string dbName, string containerId, Guid id, PartitionKey partitionKey)
+        public async Task<T> Retrieve(string dbName, string containerId, string id, string partitionKey)
         {
+            
             var container = await GetContainerAsync(dbName, containerId);
 
             var result = await container.ReadItemAsync<T>(
-             partitionKey: partitionKey,
-             id: id.ToString());
+             partitionKey: new PartitionKey(partitionKey),
+             id: id);
 
             return result;
         }
 
         
-        public async Task<T> UpdateDocument(string dbName, string containerId, T document, Guid id)
+        public async Task<T> UpdateDocument(string dbName, string containerId, T document, string id)
         {
-            await (await GetContainerAsync(dbName, containerId)).ReplaceItemAsync<T>(document,id.ToString());
+            await (await GetContainerAsync(dbName, containerId)).ReplaceItemAsync<T>(document,id);
 
             return document;
         }
@@ -61,13 +62,13 @@ namespace GenerIcRepository
         public async Task<T> UpdateDocumentOptimisticConcurrency(string dbName,
           string containerId,
           T document,
-          PartitionKey partitionKey)
+          string partitionKey)
         {
             var container = await GetContainerAsync(dbName, containerId);
 
             try
             {
-                await container.ReplaceItemAsync<T>(document, document.Id.ToString(), partitionKey, new ItemRequestOptions { IfMatchEtag = document.ETag});
+                await container.ReplaceItemAsync<T>(document, document.Id, new PartitionKey(partitionKey), new ItemRequestOptions { IfMatchEtag = document.ETag});
             }
             catch (CosmosException ex)
             {
@@ -81,9 +82,9 @@ namespace GenerIcRepository
             return document;
         }
 
-        public async Task DeleteDocument(string dbName, string containerId, Guid id, PartitionKey partiotionKey)
+        public async Task DeleteDocument(string dbName, string containerId, string id, string partiotionKey)
         {
-            await (await GetContainerAsync(dbName, containerId)).DeleteItemAsync<T>(id.ToString(), partiotionKey);
+            await (await GetContainerAsync(dbName, containerId)).DeleteItemAsync<T>(id, new PartitionKey(partiotionKey));
         }
 
         protected async Task<Container> GetContainerAsync(string dbName, string containerId)
@@ -93,6 +94,9 @@ namespace GenerIcRepository
                 ContainerId = containerId,
                 DbName = dbName
             });
+
+            if (!response.Success)
+                throw new ArgumentException($"No container found for {containerId} in Db : {dbName}");
 
             return response.Container;
         }

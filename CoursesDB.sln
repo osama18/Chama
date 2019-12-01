@@ -33,9 +33,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-4-Chama.Infrastructture",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Dal.Containers", "Chama.Dal.Containers\Chama.Dal.Containers.csproj", "{BBDA77F4-A77A-4D99-895B-81966FC9415B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.Dal.Documents.Cousrses", "Chama.Dal.Documents\Chama.Dal.Documents.Cousrses.csproj", "{357A41EC-8F9E-4953-A60B-6BFF24133DDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.Dal.GenerIcRepository", "GenerIcRepository\Chama.Dal.GenerIcRepository.csproj", "{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerIcRepository", "GenerIcRepository\GenerIcRepository.csproj", "{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.ApplicatoionServices.Courses", "Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.Courses.csproj", "{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,14 +67,14 @@ Global
 		{BBDA77F4-A77A-4D99-895B-81966FC9415B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBDA77F4-A77A-4D99-895B-81966FC9415B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBDA77F4-A77A-4D99-895B-81966FC9415B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{357A41EC-8F9E-4953-A60B-6BFF24133DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{357A41EC-8F9E-4953-A60B-6BFF24133DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{357A41EC-8F9E-4953-A60B-6BFF24133DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{357A41EC-8F9E-4953-A60B-6BFF24133DDC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,8 +86,8 @@ Global
 		{0B328021-2293-4E28-939F-432F42F90157} = {CC464C85-666E-44A9-BF1D-7F786BBB2E72}
 		{D3F00A88-771C-4724-9300-178A43ECACCC} = {CC464C85-666E-44A9-BF1D-7F786BBB2E72}
 		{BBDA77F4-A77A-4D99-895B-81966FC9415B} = {10C8E396-B5B3-495B-ABD9-951C69147CE4}
-		{357A41EC-8F9E-4953-A60B-6BFF24133DDC} = {10C8E396-B5B3-495B-ABD9-951C69147CE4}
 		{CBE7809F-7974-4E71-B8DB-DDBA179F4D01} = {10C8E396-B5B3-495B-ABD9-951C69147CE4}
+		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91} = {A1F0B478-FA94-40FE-B1DC-1A131427D632}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC0B38D5-C3C9-4215-AE0F-790A6D71500E}
