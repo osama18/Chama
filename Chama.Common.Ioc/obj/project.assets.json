@@ -99,11 +99,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chama.Common.Ioc\\Chama.Common.Ioc.csproj",
+      "projectUniqueName": "C:\\Work\\Chama\\Chama.Common.Ioc\\Chama.Common.Ioc.csproj",
       "projectName": "Chama.Common.Ioc",
-      "projectPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chama.Common.Ioc\\Chama.Common.Ioc.csproj",
+      "projectPath": "C:\\Work\\Chama\\Chama.Common.Ioc\\Chama.Common.Ioc.csproj",
       "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chama.Common.Ioc\\obj\\",
+      "outputPath": "C:\\Work\\Chama\\Chama.Common.Ioc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

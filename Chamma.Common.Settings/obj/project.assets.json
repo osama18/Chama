@@ -261,11 +261,11 @@
   "project": {
     "version": "1.0.2",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj",
+      "projectUniqueName": "C:\\Work\\Chama\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj",
       "projectName": "Chamma.Common.Settings",
-      "projectPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj",
+      "projectPath": "C:\\Work\\Chama\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj",
       "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chamma.Common.Settings\\obj\\",
+      "outputPath": "C:\\Work\\Chama\\Chamma.Common.Settings\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

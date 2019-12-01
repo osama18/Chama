@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj": {}
+    "C:\\Work\\Chama\\CoursesDB\\DB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj": {
+    "C:\\Work\\Chama\\CoursesDB\\DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj",
+        "projectUniqueName": "C:\\Work\\Chama\\CoursesDB\\DB.csproj",
         "projectName": "DB",
-        "projectPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj",
+        "projectPath": "C:\\Work\\Chama\\CoursesDB\\DB.csproj",
         "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\obj\\",
+        "outputPath": "C:\\Work\\Chama\\CoursesDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -8,3 +8,15 @@ C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\bin\Debug\netcoreapp3.0\DB.dl
 C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\bin\Debug\netcoreapp3.0\DB.pdb
 C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\obj\Debug\netcoreapp3.0\DB.dll
 C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\obj\Debug\netcoreapp3.0\DB.pdb
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\obj\Debug\netcoreapp3.0\DB.csprojAssemblyReference.cache
+C:\Work\Chama\CoursesDB\bin\Debug\netcoreapp3.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Work\Chama\CoursesDB\bin\Debug\netcoreapp3.0\Cosmos.CRTCompat.dll
+C:\Work\Chama\CoursesDB\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Work\Chama\CoursesDB\bin\Debug\netcoreapp3.0\DB.deps.json
+C:\Work\Chama\CoursesDB\bin\Debug\netcoreapp3.0\DB.dll
+C:\Work\Chama\CoursesDB\bin\Debug\netcoreapp3.0\DB.pdb
+C:\Work\Chama\CoursesDB\obj\Debug\netcoreapp3.0\DB.csprojAssemblyReference.cache
+C:\Work\Chama\CoursesDB\obj\Debug\netcoreapp3.0\DB.AssemblyInfoInputs.cache
+C:\Work\Chama\CoursesDB\obj\Debug\netcoreapp3.0\DB.AssemblyInfo.cs
+C:\Work\Chama\CoursesDB\obj\Debug\netcoreapp3.0\DB.dll
+C:\Work\Chama\CoursesDB\obj\Debug\netcoreapp3.0\DB.pdb

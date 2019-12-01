@@ -9,8 +9,8 @@
       "DBTester/1.0.0": {
         "dependencies": {
           "Chama.Common.Logging": "1.0.1",
+          "Chama.Dal.DB": "1.0.0",
           "Chamma.Common.Settings": "1.0.2",
-          "DB": "1.0.0",
           "Microsoft.AspNetCore.Hosting": "2.2.7",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "NetCore.AutoRegisterDi": "1.1.0",
@@ -1322,7 +1322,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "DB/1.0.0": {
+      "Chama.Dal.DB/1.0.0": {
         "dependencies": {
           "Chama.Common.Logging": "1.0.1",
           "Chamma.Common.Settings": "1.0.2",
@@ -1331,7 +1331,7 @@
           "Microsoft.Extensions.Configuration.Json": "3.0.1"
         },
         "runtime": {
-          "DB.dll": {}
+          "Chama.Dal.DB.dll": {}
         }
       }
     }
@@ -2266,7 +2266,7 @@
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
-    "DB/1.0.0": {
+    "Chama.Dal.DB/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

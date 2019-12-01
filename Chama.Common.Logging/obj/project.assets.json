@@ -41,11 +41,11 @@
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
+      "projectUniqueName": "C:\\Work\\Chama\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
       "projectName": "Chama.Common.Logging",
-      "projectPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
+      "projectPath": "C:\\Work\\Chama\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
       "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\Chama.Common.Logging\\obj\\",
+      "outputPath": "C:\\Work\\Chama\\Chama.Common.Logging\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

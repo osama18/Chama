@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\DBTester\\DBTester.csproj": {}
+    "C:\\Work\\Chama\\DBTester\\DBTester.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj": {
+    "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj",
-        "projectName": "DB",
-        "projectPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj",
+        "projectUniqueName": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj",
+        "projectName": "Chama.Dal.DB",
+        "projectPath": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj",
         "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\obj\\",
+        "outputPath": "C:\\Work\\Chama\\CoursesDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\DBTester\\DBTester.csproj": {
+    "C:\\Work\\Chama\\DBTester\\DBTester.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\DBTester\\DBTester.csproj",
+        "projectUniqueName": "C:\\Work\\Chama\\DBTester\\DBTester.csproj",
         "projectName": "DBTester",
-        "projectPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\DBTester\\DBTester.csproj",
+        "projectPath": "C:\\Work\\Chama\\DBTester\\DBTester.csproj",
         "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\DBTester\\obj\\",
+        "outputPath": "C:\\Work\\Chama\\DBTester\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -113,8 +113,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj": {
-                "projectPath": "C:\\Users\\oyassein\\source\\repos\\CoursesDB\\CoursesDB\\DB.csproj"
+              "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj": {
+                "projectPath": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj"
               }
             }
           }
