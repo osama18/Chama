@@ -2019,6 +2019,23 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Chama.Dal.Containers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Chama.Common.Logging": "1.0.1",
+          "Chamma.Common.Settings": "1.0.2",
+          "Microsoft.Azure.Cosmos": "3.4.1",
+          "Microsoft.Azure.DocumentDB": "2.9.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Chama.Dal.Containers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Chama.Dal.Containers.dll": {}
+        }
+      },
       "Chama.Dal.DB/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -6810,6 +6827,11 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
+    "Chama.Dal.Containers/1.0.0": {
+      "type": "project",
+      "path": "../Chama.Dal.Containers/Chama.Dal.Containers.csproj",
+      "msbuildProject": "../Chama.Dal.Containers/Chama.Dal.Containers.csproj"
+    },
     "Chama.Dal.DB/1.0.0": {
       "type": "project",
       "path": "../CoursesDB/Chama.Dal.DB.csproj",
@@ -6819,6 +6841,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Chama.Common.Logging >= 1.0.1",
+      "Chama.Dal.Containers >= 1.0.0",
       "Chama.Dal.DB >= 1.0.0",
       "Chamma.Common.Settings >= 1.0.2",
       "Microsoft.AspNetCore.Hosting >= 2.2.7",
@@ -6860,6 +6883,9 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
+            "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
+              "projectPath": "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj"
+            },
             "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj": {
               "projectPath": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj"
             }

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Chama.Dal.Containers\Chama.Dal.Containers.csproj" />
     <ProjectReference Include="..\CoursesDB\Chama.Dal.DB.csproj" />
   </ItemGroup>
 

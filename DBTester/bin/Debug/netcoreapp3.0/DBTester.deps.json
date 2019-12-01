@@ -9,6 +9,7 @@
       "DBTester/1.0.0": {
         "dependencies": {
           "Chama.Common.Logging": "1.0.1",
+          "Chama.Dal.Containers": "1.0.0",
           "Chama.Dal.DB": "1.0.0",
           "Chamma.Common.Settings": "1.0.2",
           "Microsoft.AspNetCore.Hosting": "2.2.7",
@@ -1322,6 +1323,18 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Chama.Dal.Containers/1.0.0": {
+        "dependencies": {
+          "Chama.Common.Logging": "1.0.1",
+          "Chamma.Common.Settings": "1.0.2",
+          "Microsoft.Azure.Cosmos": "3.4.1",
+          "Microsoft.Azure.DocumentDB": "2.9.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.1"
+        },
+        "runtime": {
+          "Chama.Dal.Containers.dll": {}
+        }
+      },
       "Chama.Dal.DB/1.0.0": {
         "dependencies": {
           "Chama.Common.Logging": "1.0.1",
@@ -2265,6 +2278,11 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Chama.Dal.Containers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Chama.Dal.DB/1.0.0": {
       "type": "project",

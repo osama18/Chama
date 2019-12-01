@@ -1,4 +1,5 @@
-﻿using Chamma.Common.Logging;
+﻿using Chama.Dal.Containers;
+using Chamma.Common.Logging;
 using Chamma.Common.Settings;
 using CoursesDB;
 using DBTester.IO;
@@ -63,7 +64,7 @@ namespace DBTester
         private static Dictionary<string,ICommad> LoadCommads()
         {
             var writer = serviceProvider.GetService<IWriter>();
-            var command = serviceProvider.GetService<IViewDataBasesCommand>();
+            var command = serviceProvider.GetService<IViewContainerCommand>();
             var type = typeof(ICommad);
             var commands = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(s => s.GetTypes())
@@ -87,7 +88,8 @@ namespace DBTester
                 .AddSingleton<IConfigurationRoot>(configuration)
                 .RegisterSettingsProvider()
                 .RegisterDbClient()
-                .RegisterLoggers();
+                .RegisterLoggers()
+                .RegisterContainerClient();
 
             services.RegisterAssemblyPublicNonGenericClasses(
                      Assembly.GetAssembly(typeof(Program)))
