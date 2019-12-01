@@ -2,11 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Chama.Common.Logging" Version="1.0.1" />
-    <PackageReference Include="Chamma.Common.Settings" Version="1.0.2" />
+    <PackageReference Include="Chama.Dal.DB" Version="1.0.0" />
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.4.1" />
     <PackageReference Include="Microsoft.Azure.DocumentDB" Version="2.9.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.1" />

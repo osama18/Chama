@@ -8,6 +8,8 @@ namespace CoursesDB.Client
     {
         Task<CreateDbResponse> CreateDb(CreateDbRequest request);
         Task<GetDataBasesResponse> GetDataBases();
+
+        Task<GetDataBaseResponse> GetDataBase(GetDataBaseRequest request);
         Task<DeleteDbResponse> DeleteDb(DeleteDbRequest request);
 
     }

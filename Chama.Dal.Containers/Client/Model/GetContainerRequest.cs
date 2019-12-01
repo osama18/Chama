@@ -1,7 +1,8 @@
 ﻿namespace Chama.Dal.Containers.Client
 {
-    public class GetContainersRequest
+    public class GetContainerRequest
     {
         public string DbName { get; set; }
+        public string ContainerId { get; set; }
     }
 }

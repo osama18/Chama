@@ -28,8 +28,9 @@ namespace DBTester
         public void Execute()
         {
             writer.Write("Enter Db Name : ");
-            var result = dbClient.GetConatiners(new Chama.Dal.Containers.Client.Model.GetContainersRequest {
-                Name = reader.ReadMessage()
+            var result = dbClient.GetConatiners(new GetContainersRequest
+            {
+                DbName = reader.ReadMessage()
             }).GetAwaiter().GetResult();
 
             if (result.Success)

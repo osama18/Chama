@@ -7,7 +7,7 @@ namespace Chama.Dal.Containers
     {
         public static IServiceCollection RegisterContainerClient(this IServiceCollection collection)
         {
-            return collection.AddSingleton<IContainerClient, ContainerClient>();
+            return collection.AddScoped<IContainerClient, ContainerClient>();
         }
     }
 }

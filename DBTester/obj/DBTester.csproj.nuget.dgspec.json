@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj",
         "projectName": "Chama.Dal.Containers",
@@ -48,9 +48,9 @@
               "target": "Package",
               "version": "[1.0.1, )"
             },
-            "Chamma.Common.Settings": {
+            "Chama.Dal.DB": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[1.0.0, )"
             },
             "Microsoft.Azure.Cosmos": {
               "target": "Package",

@@ -4,6 +4,7 @@ using Chama.Dal.Containers.Client.Model;
 using Microsoft.Azure.Cosmos;
 using System;
 using System.Threading.Tasks;
+using CoursesDB.Client;
 
 namespace Chama.Dal.Containers.Client
 {
@@ -11,15 +12,11 @@ namespace Chama.Dal.Containers.Client
     {
         private readonly ISettingProvider settingProvider;
         private readonly ILogger logger;
-        private readonly CosmosClient cosmosClient;
+        private readonly IDBClient dBClient;
         private const int DefaultThroughput = 400;
-        public ContainerClient(ISettingProvider settingProvider,ILogger logger)
+        public ContainerClient(ILogger logger, IDBClient dBClient)
         {
-            this.settingProvider = settingProvider;
-            this.logger = logger;
-            var connection = settingProvider.GetSetting<string>(Constants.ConnectionString);
-            var primaryKey = settingProvider.GetSetting<string>(Constants.PrimaryKey);
-            cosmosClient = new CosmosClient(connection,primaryKey);
+            this.dBClient = dBClient;
         }
 
 
@@ -39,12 +36,12 @@ namespace Chama.Dal.Containers.Client
                     PartitionKeyPath = request.PartiotionKey ?? "/partitionKey"
                 };
 
-                var dataBase = cosmosClient.GetDatabase(request.DbName);
+                var result = await dBClient.GetDataBase( new GetDataBaseRequest { Name = request.DbName });
 
-                if (dataBase == null)
+                if (result.Database == null)
                     throw new InvalidOperationException($"No Db found with name {request.DbName}");
 
-                var result = await dataBase.CreateContainerAsync(containerDef,request.Throughput ?? DefaultThroughput);
+                var container = await result.Database.CreateContainerAsync(containerDef,request.Throughput ?? DefaultThroughput);
                 
 
                 return new CreateContainerResponse
@@ -73,7 +70,13 @@ namespace Chama.Dal.Containers.Client
                 if (request == null)
                     throw new ArgumentNullException($"request is null");
 
-                var dataBase = cosmosClient.GetContainer(request.DbName,request.ConatinerId);
+
+                var result = await dBClient.GetDataBase(new GetDataBaseRequest { Name = request.DbName });
+
+                if (result.Database == null)
+                    throw new InvalidOperationException($"No Db found with name {request.DbName}");
+
+                var dataBase = result.Database.GetContainer(request.ConatinerId);
 
                 if (dataBase == null)
                     throw new InvalidOperationException($"No Db found with name {request.DbName}");
@@ -104,13 +107,12 @@ namespace Chama.Dal.Containers.Client
                 if (request == null)
                     throw new ArgumentNullException($"request is null");
 
-                var dataBase = cosmosClient.GetDatabase(request.Name);
+                var result = await dBClient.GetDataBase(new GetDataBaseRequest { Name = request.DbName });
 
-                if (dataBase == null)
-                    throw new InvalidOperationException($"No Db found with name {request.Name}");
+                var iterators = result.Database.GetContainerQueryIterator<ContainerProperties>();
 
-                var iterators = dataBase.GetContainerQueryIterator<ContainerProperties>();
                 var containers = await iterators.ReadNextAsync();
+
                 return new GetContainersResponse
                 {
                     Containers = containers
@@ -129,5 +131,34 @@ namespace Chama.Dal.Containers.Client
             }
         }
 
+        public async Task<GetContainerResponse> GetConatiner(GetContainerRequest request)
+        {
+
+            try
+            {
+                if (request == null)
+                    throw new ArgumentNullException($"request is null");
+
+                var result = await dBClient.GetDataBase(new GetDataBaseRequest { Name = request.DbName });
+                var container = result.Database.GetContainer(request.ContainerId);
+
+                return new GetContainerResponse
+                {
+                    Container = container
+                };
+            }
+            catch (Exception ex)
+            {
+                await logger.LogException(LogEvent.RetriveDataBasesFailed, ex);
+                return new GetContainerResponse
+                {
+                    Error = new Error
+                    {
+                        Message = "Data Base retrieve Failed"
+                    }
+                };
+            }
+            
+        }
     }
 }

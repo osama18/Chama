@@ -8,6 +8,8 @@ namespace Chama.Dal.Containers.Client
     {
         Task<CreateContainerResponse> CreateContainer(CreateConatinerRequest request);
         Task<GetContainersResponse> GetConatiners(GetContainersRequest request);
+
+        Task<GetContainerResponse> GetConatiner(GetContainerRequest request);
         Task<DeleteContainerResponse> DeleteConatiner(DeleteContainerRequest request);
 
     }

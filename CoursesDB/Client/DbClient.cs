@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CoursesDB.Client
 {
-    public class DbClient : IDBClient
+    internal class DbClient : IDBClient
     {
         private readonly ISettingProvider settingProvider;
         private readonly ILogger logger;
@@ -71,6 +71,36 @@ namespace CoursesDB.Client
                     Error = new Error
                     {
                         Message = "Data Base delete Failed"
+                    }
+                };
+            }
+        }
+
+        public async Task<GetDataBaseResponse> GetDataBase(GetDataBaseRequest request)
+        {
+            try
+            {
+                if (request == null)
+                    throw new ArgumentNullException($"request is null");
+
+                var dataBase = cosmosClient.GetDatabase(request.Name);
+
+                if (dataBase == null)
+                    throw new InvalidOperationException($"No Db found with name {request.Name}");
+
+                return new GetDataBaseResponse
+                {
+                    Database = dataBase
+                };
+            }
+            catch (Exception ex)
+            {
+                await logger.LogException(LogEvent.RetriveDataBasesFailed, ex);
+                return new GetDataBaseResponse
+                {
+                    Error = new Error
+                    {
+                        Message = "Data Base retrieve Failed"
                     }
                 };
             }
