@@ -1,0 +1,84 @@
+# Compiled source #
+###################
+*.com
+*.class
+# *.dll
+# *.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+[Tt]humbs.db
+
+# MSBuild by convention additions #
+######################
+[Bb]in/
+[Dd]ebug*/
+[Rr]elease*/
+[Oo]bj/
+[Ss]ql/
+[Cc]sx/
+*ReSharper*
+Build/Bin/
+Build/Coverage/
+Build/IntegrationTestResults/
+Build/Releases/
+Build/TestResults/
+Build/CodeAnalysis/
+Build/CodeCoverage/
+Build/Tools/
+*.suo
+*.dbmdl
+*GeneratedSetVersionFile*
+Static/Css/[a-zA-Z0-9\.\-/]*.min.css
+Static/Js/[a-zA-Z0-9\.\-]*.min.js
+*.testsettings
+*.DotSettings
+.hg/
+.svn/
+.sass-cache/
+*.user
+Dependencies/NuGet/
+Build/Scripts/buildversion.txt
+node_modules/
+/packages/
+!packages/repositories.config
+*.v2.ncrunchproject
+ncrunchtemp*
+/TestResults
+/_Ncrunch_Enosis.Services
+.localhistory/
+/.vs/config/applicationhost.config
+
+*.orig
+/OpenCover
+
+grpc_csharp_ext.x86.dll
+libgrpc_csharp_ext.x64.dylib
+libgrpc_csharp_ext.x86.dylib
+grpc_csharp_ext.x64.dll
+/.axoCover
+/Enosis.Services.v3.ncrunchsolution
+
+.vs
+*.un~
