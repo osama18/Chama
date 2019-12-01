@@ -1,0 +1,6 @@
+//Logging
+nuget add C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Logging\bin\Debug\Chama.Common.Logging.1.0.1.nupkg -source c:\work\nuget_repo
+
+//Settings
+nuget add C:\Users\oyassein\source\repos\CoursesDB\Chamma.Common.Settings\bin\Debug\Chamma.Common.Settings.1.0.0.nupkg -source c:\work\nuget_repo
+

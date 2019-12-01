@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Chamma.Common.Settings</id>
+    <version>1.0.2</version>
+    <authors>Chamma.Common.Settings</authors>
+    <owners>Chamma.Common.Settings</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.0">
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="3.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="3.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\oyassein\source\repos\CoursesDB\Chamma.Common.Settings\bin\Debug\netcoreapp3.0\Chamma.Common.Settings.dll" target="lib\netcoreapp3.0\Chamma.Common.Settings.dll" />
+  </files>
+</package>

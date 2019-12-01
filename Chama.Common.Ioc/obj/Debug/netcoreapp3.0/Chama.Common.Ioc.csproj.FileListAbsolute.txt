@@ -1,0 +1,8 @@
+C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Ioc\bin\Debug\netcoreapp3.0\Chama.Common.Ioc.deps.json
+C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Ioc\bin\Debug\netcoreapp3.0\Chama.Common.Ioc.dll
+C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Ioc\obj\Debug\netcoreapp3.0\Chama.Common.Ioc.csprojAssemblyReference.cache
+C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Ioc\obj\Debug\netcoreapp3.0\Chama.Common.Ioc.AssemblyInfoInputs.cache
+C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Ioc\obj\Debug\netcoreapp3.0\Chama.Common.Ioc.AssemblyInfo.cs
+C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Ioc\bin\Debug\netcoreapp3.0\Chama.Common.Ioc.pdb
+C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Ioc\obj\Debug\netcoreapp3.0\Chama.Common.Ioc.dll
+C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Ioc\obj\Debug\netcoreapp3.0\Chama.Common.Ioc.pdb

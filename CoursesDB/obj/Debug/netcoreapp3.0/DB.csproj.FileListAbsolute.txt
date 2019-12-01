@@ -1,0 +1,10 @@
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\obj\Debug\netcoreapp3.0\DB.AssemblyInfoInputs.cache
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\obj\Debug\netcoreapp3.0\DB.AssemblyInfo.cs
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\bin\Debug\netcoreapp3.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\bin\Debug\netcoreapp3.0\Cosmos.CRTCompat.dll
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\bin\Debug\netcoreapp3.0\DB.deps.json
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\bin\Debug\netcoreapp3.0\DB.dll
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\bin\Debug\netcoreapp3.0\DB.pdb
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\obj\Debug\netcoreapp3.0\DB.dll
+C:\Users\oyassein\source\repos\CoursesDB\CoursesDB\obj\Debug\netcoreapp3.0\DB.pdb
