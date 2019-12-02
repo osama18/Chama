@@ -46,9 +46,24 @@ namespace Chama.ApplicatoionServices.Courses
 
                 var course = await coursesRspository.Retrieve(_dbName, _conatinerId, request.CourseId.ToString(), request.CourseId.ToString());
 
-                if (course.StudentsIds == null)
+                if (course == null)
                 {
-                    course.StudentsIds = new List<Guid>() { request.StudentId};
+                    throw new ArgumentNullException($"No Course Found with Id {request.CourseId}");
+                }
+
+                if (course.StudentsIds != null)
+                {
+                    if (course.StudentsIds.Contains(request.StudentId))
+                    {
+                        return new CourseSubscribeResponse { 
+                            Subscribed = false,
+                            ErrorMessage = "Already Registered"
+                        };
+                    }
+                }
+                else
+                {
+                    course.StudentsIds = new List<Guid>() { request.StudentId };
                 }
 
                 if (course.StudentsIds.Count() >= course.Capacity)

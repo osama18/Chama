@@ -14,6 +14,6 @@ nuget add C:\Work\Chama\Chama.Dal.Containers\bin\Debug\Chama.Dal.Containers.1.0.
 nuget add C:\Work\Chama\GenerIcRepository\bin\Debug\Chama.Dal.GenerIcRepository.1.0.2.nupkg -source c:\work\nuget_repo
 
 //appserviceCourses
-nuget add C:\Work\Chama\Chama.ApplicatoionServices.Courses\bin\Debug\Chama.ApplicatoionServices.Courses.1.0.2.nupkg -source c:\work\nuget_repo
+nuget add C:\Work\Chama\Chama.ApplicatoionServices.Courses\bin\Debug\Chama.ApplicatoionServices.Courses.1.0.3.nupkg -source c:\work\nuget_repo
 
 
