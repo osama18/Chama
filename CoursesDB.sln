@@ -33,9 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-4-Chama.Infrastructture",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Dal.Containers", "Chama.Dal.Containers\Chama.Dal.Containers.csproj", "{BBDA77F4-A77A-4D99-895B-81966FC9415B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.Dal.GenerIcRepository", "GenerIcRepository\Chama.Dal.GenerIcRepository.csproj", "{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Dal.GenerIcRepository", "GenerIcRepository\Chama.Dal.GenerIcRepository.csproj", "{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.ApplicatoionServices.Courses", "Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.Courses.csproj", "{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.ApplicatoionServices.Courses", "Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.Courses.csproj", "{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.ApplicatinServices.Courses.Test", "Chama.ApplicatinServices.Courses.Test\Chama.ApplicatinServices.Courses.Test.csproj", "{A40E1BE0-57A8-4143-9071-F91EABAAE4BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40E1BE0-57A8-4143-9071-F91EABAAE4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40E1BE0-57A8-4143-9071-F91EABAAE4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40E1BE0-57A8-4143-9071-F91EABAAE4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40E1BE0-57A8-4143-9071-F91EABAAE4BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{BBDA77F4-A77A-4D99-895B-81966FC9415B} = {10C8E396-B5B3-495B-ABD9-951C69147CE4}
 		{CBE7809F-7974-4E71-B8DB-DDBA179F4D01} = {10C8E396-B5B3-495B-ABD9-951C69147CE4}
 		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91} = {A1F0B478-FA94-40FE-B1DC-1A131427D632}
+		{A40E1BE0-57A8-4143-9071-F91EABAAE4BA} = {A1F0B478-FA94-40FE-B1DC-1A131427D632}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC0B38D5-C3C9-4215-AE0F-790A6D71500E}

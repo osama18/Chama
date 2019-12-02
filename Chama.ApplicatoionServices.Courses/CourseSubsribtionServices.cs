@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Chama.ApplicatoionServices.Courses
 {
-    internal class CourseSubsribtionServices : ICourseSubsribtionServices
+    public class CourseSubsribtionServices : ICourseSubsribtionServices
     {
         private readonly IGenericRepository<Course> coursesRspository;
         private readonly ISettingProvider settingProvider;
@@ -71,7 +71,12 @@ namespace Chama.ApplicatoionServices.Courses
                 catch (Exception ex)
                 {
                     await logger.LogException(LogEvent.DeadLockSubscription, ex);
-                    return await SubscribeAsync(request); // try again and should stop on the count with the next step
+                    return new CourseSubscribeResponse
+                    {
+                        Subscribed = false,
+                        ErrorMessage = "Course is so busy, Please try again later",
+                        ErrorReason = ErrorReason.TechnicalError
+                    };
                 }
             }
             catch (Exception ex) {
