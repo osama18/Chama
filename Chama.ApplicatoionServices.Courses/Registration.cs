@@ -1,16 +1,12 @@
-﻿using CoursesDB.Client;
-using GenerIcRepository;
+﻿using CoursesDB;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Chama.ApplicatoionServices.Courses
 {
     public static class GenerIcRepository
     {
-        public static IServiceCollection RegisterGenerIcRepository(this IServiceCollection collection)
+        public static IServiceCollection RegisterSubscribtionServices(this IServiceCollection collection)
         {
+            collection.RegisterGenerIcRepository();
             return collection.AddScoped<ICourseSubsribtionServices, CourseSubsribtionServices>();
         }
     }

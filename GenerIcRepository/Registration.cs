@@ -1,4 +1,5 @@
-﻿using CoursesDB.Client;
+﻿using Chama.Dal.Containers;
+using CoursesDB.Client;
 using GenerIcRepository;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -11,6 +12,7 @@ namespace CoursesDB
     {
         public static IServiceCollection RegisterGenerIcRepository(this IServiceCollection collection)
         {
+            collection.RegisterContainerClient();
             return collection.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         }
     }
