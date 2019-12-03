@@ -36,7 +36,7 @@ namespace Chama.Web.SubscribtionV1.Controllers
                 });
 
                 if (result.Subscribed) 
-                    Ok();
+                    return Ok();
                 else
                     return StatusCode(500);
 
@@ -46,8 +46,6 @@ namespace Chama.Web.SubscribtionV1.Controllers
                 await logger.LogException(LogEventApplication.FailedToSubScribe, ex);
                 return StatusCode(500);
             }
-
-            return Ok();
         }
     }
 }

@@ -14,11 +14,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Chama.ApplicatoionServices.CoursesServices\Chama.ApplicatoionServices.CoursesServices.csproj" />
     <ProjectReference Include="..\Chama.ApplicatoionServices.StudentsServices\Chama.ApplicatoionServices.StudentsServices.csproj" />
     <ProjectReference Include="..\Chama.Common.Logging\Chama.Common.Loggers.csproj" />
     <ProjectReference Include="..\Chama.Dal.Containers\Chama.Dal.Containers.csproj" />
     <ProjectReference Include="..\CoursesDB\Chama.Dal.DB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Chama.ApplicatoionServices.CoursesServices">
+      <HintPath>..\..\Chama\Chama.ApplicatoionServices.CoursesServices\bin\Debug\netcoreapp3.0\Chama.ApplicatoionServices.CoursesServices.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
