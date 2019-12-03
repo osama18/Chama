@@ -198,6 +198,9 @@
               },
               "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj": {
                 "projectPath": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj"
+              },
+              "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj": {
+                "projectPath": "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj"
               }
             }
           }
@@ -234,6 +237,98 @@
             "StructureMap.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj": {
+      "version": "1.0.2",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj",
+        "projectName": "Chama.Dal.GenerIcRepository",
+        "projectPath": "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj",
+        "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Chama\\GenerIcRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\oyassein\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Nuggets": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\work\\nuget_repo": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Chama.Common.Logging": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Chama.Dal.Containers": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Microsoft.AspNet.WebApi.OData": {
+              "target": "Package",
+              "version": "[5.7.0, )"
+            },
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Microsoft.Azure.DocumentDB": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "Microsoft.Azure.DocumentDB.Core": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.0-preview3.19553.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

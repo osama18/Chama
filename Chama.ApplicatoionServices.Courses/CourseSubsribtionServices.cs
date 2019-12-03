@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Chama.ApplicatoionServices.Courses
+namespace Chama.ApplicatoionServices.SubScribtionsServices
 {
     public class CourseSubsribtionServices : ICourseSubsribtionServices
     {

@@ -1,7 +1,7 @@
 ﻿using Chama.ApplicatoionServices.Courses.Dtos;
 using System.Threading.Tasks;
 
-namespace Chama.ApplicatoionServices.Courses
+namespace Chama.ApplicatoionServices.SubScribtionsServices
 {
     public interface ICourseSubsribtionServices
     {

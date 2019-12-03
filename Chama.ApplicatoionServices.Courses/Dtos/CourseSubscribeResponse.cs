@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Chama.ApplicatoionServices.Courses.Dtos
+namespace Chama.ApplicatoionServices.SubScribtionsServices.Dtos
 {
     public class CourseSubscribeResponse 
     {

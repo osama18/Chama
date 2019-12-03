@@ -33,11 +33,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Dal.Containers", "Cha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Dal.GenerIcRepository", "GenerIcRepository\Chama.Dal.GenerIcRepository.csproj", "{CBE7809F-7974-4E71-B8DB-DDBA179F4D01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.ApplicatoionServices.Courses", "Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.Courses.csproj", "{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.ApplicatoionServices.SubScribtionsServices", "Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.SubScribtionsServices.csproj", "{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.ApplicatinServices.Courses.Test", "Chama.ApplicatinServices.Courses.Test\Chama.ApplicatinServices.Courses.Test.csproj", "{A40E1BE0-57A8-4143-9071-F91EABAAE4BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.Web.SubscribtionV1", "Chama.Web.SubscribtionV1\Chama.Web.SubscribtionV1.csproj", "{2E29C86A-C234-40BB-8155-06921A08F025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seed", "Seed\Seed.csproj", "{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{2E29C86A-C234-40BB-8155-06921A08F025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E29C86A-C234-40BB-8155-06921A08F025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E29C86A-C234-40BB-8155-06921A08F025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +106,7 @@ Global
 		{3AB00236-2BEE-497D-9392-B3A9AE6FEA91} = {A1F0B478-FA94-40FE-B1DC-1A131427D632}
 		{A40E1BE0-57A8-4143-9071-F91EABAAE4BA} = {A1F0B478-FA94-40FE-B1DC-1A131427D632}
 		{2E29C86A-C234-40BB-8155-06921A08F025} = {E6219459-73FE-46F2-A494-FAFB92193B89}
+		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD} = {5785E193-B117-49DD-BD12-C70E6E2A769C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC0B38D5-C3C9-4215-AE0F-790A6D71500E}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Chama.ApplicatoionServices.Courses
+namespace Chama.ApplicatoionServices.SubScribtionsServices
 {
     public enum LogEvent
     {

@@ -28,12 +28,25 @@ namespace DBTester
 
         public void Execute()
         {
-            writer.Write("Enter Db Name > Enter > Conatiner Id > Enter > Partition Key > Enter > ThroughtPut > Enter ");
+            writer.Write("Enter Db Name");
+            var dbNmame = reader.ReadMessage();
+            writer.Write("Conatiner Id ");
+            var conatinerId = reader.ReadMessage();
+            writer.Write("Partition Key");
+            var partitionKey = reader.ReadMessage();
+            writer.Write("ThroughtPut");
+            var throughPut = 0;
+            bool parsed = int.TryParse(reader.ReadMessage(), out throughPut);
+            if(!parsed)
+            {
+                writer.Write("Invalid number value.");
+                return;
+            }
             var result = dbClient.CreateContainer(new Chama.Dal.Containers.Client.Model.CreateConatinerRequest{ 
-                DbName = reader.ReadMessage(),
-                ConatinerId = reader.ReadMessage(),
-                PartiotionKey = reader.ReadMessage(),
-                Throughput  = int.Parse(reader.ReadMessage())
+                DbName = dbNmame,
+                ConatinerId = conatinerId,
+                PartiotionKey = partitionKey,
+                Throughput  = throughPut
             }).GetAwaiter().GetResult();
 
             if (result.Success)

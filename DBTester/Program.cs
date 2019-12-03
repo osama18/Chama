@@ -87,9 +87,8 @@ namespace DBTester
                 .AddLogging()
                 .AddSingleton<IConfigurationRoot>(configuration)
                 .RegisterSettingsProvider()
-                .RegisterDbClient()
                 .RegisterLoggers()
-                .RegisterContainerClient();
+                .RegisterGenerIcRepository();
 
             services.RegisterAssemblyPublicNonGenericClasses(
                      Assembly.GetAssembly(typeof(Program)))

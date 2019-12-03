@@ -1,6 +1,6 @@
 ﻿using CoursesDB;
 using Microsoft.Extensions.DependencyInjection;
-namespace Chama.ApplicatoionServices.Courses
+namespace Chama.ApplicatoionServices.SubScribtionsServices
 {
     public static class GenerIcRepository
     {

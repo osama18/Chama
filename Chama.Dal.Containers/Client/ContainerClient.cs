@@ -134,7 +134,6 @@ namespace Chama.Dal.Containers.Client
 
         public async Task<GetContainerResponse> GetConatiner(GetContainerRequest request)
         {
-
             try
             {
                 if (request == null)

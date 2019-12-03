@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.Courses.csproj" />
+    <ProjectReference Include="..\Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.SubScribtionsServices.csproj" />
   </ItemGroup>
 
 </Project>
