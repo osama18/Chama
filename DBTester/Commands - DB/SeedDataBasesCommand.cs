@@ -1,4 +1,6 @@
-﻿using Chama.Dal.Containers.Client;
+﻿using Chama.ApplicatoionServices.StudentsServices;
+using Chama.ApplicatoionServices.StudentsServices.Dto;
+using Chama.Dal.Containers.Client;
 using Chamma.Common.Settings;
 using CoursesDB.Client;
 using CoursesDB.Client.Model;
@@ -16,37 +18,40 @@ namespace DBTester
         private readonly IReader reader;
         private readonly IDBClient dbClient;
         private readonly IContainerClient containerClient;
+        private readonly IStudentsServices studentsServices;
+        
 
         public SeedDataBasesCommand(ISettingProvider settings,
             IWriter writer,
             IReader reader,
             IDBClient dbClient,
-            IContainerClient containerClient)
+            IContainerClient containerClient,
+            IStudentsServices studentsServices)
         {
             this.settings = settings;
             this.writer = writer;
             this.reader = reader;
             this.dbClient = dbClient;
             this.containerClient = containerClient;
+            this.studentsServices = studentsServices;
         }
+
         public string Name { get => "Seed Databases"; }
         public string Key { get => "c"; }
 
         public void Execute()
         {
-            if (CreateDataBase(settings.GetSetting<string>("CoursesDbName")))
+            string dbname = settings.GetSetting<string>("CoursesDbName");
+            string studentsCont = settings.GetSetting<string>("StudentsContainer");
+            string coursesCont = settings.GetSetting<string>("CoursesConatiner");
+            if (CreateDataBase(dbname))
             {
-                if (CreateContainer(settings.GetSetting<string>("StudentsContainer")))
+                if (CreateContainer(studentsCont,dbname))
                 {
-                    if (CreateContainer(settings.GetSetting<string>("CoursesConatiner")))
+                    if (CreateContainer(coursesCont, dbname))
                     {
-                        if (SeedStudents(settings.GetSetting<string>("StudentsContainer")))
-                        {
-                            if (SeeCourses(settings.GetSetting<string>("CoursesConatiner")))
-                            {
-
-                            }
-                        }
+                        SeedStudents(studentsCont);
+                        SeeCourses(coursesCont);
                     }
                 }
             }
@@ -54,17 +59,34 @@ namespace DBTester
 
         private bool SeeCourses(string container)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
-        private bool SeedStudents(string container)
+        private void SeedStudents(string container)
         {
-            throw new NotImplementedException();
+            studentsServices.Create(new StudentDto { Name = "Osama" , Age = 32});
         }
 
-        private bool CreateContainer(string container)
+        private bool CreateContainer(string container, string dbName, string partionKey = "/id")
         {
-            throw new NotImplementedException();
+            var result = containerClient.CreateContainer(new Chama.Dal.Containers.Client.Model.CreateConatinerRequest
+            {
+                DbName = dbName,
+                ConatinerId = container,
+                PartiotionKey = partionKey,
+                Throughput = 400
+            }).GetAwaiter().GetResult();
+
+            if (result.Success)
+            {
+                writer.Write($"Conatiner with ID : {result.ContainerId} Added");
+                return true;
+            }
+            else
+            {
+                writer.Write("Failed");
+                return false;
+            }
         }
 
         private bool CreateDataBase(string dbName)

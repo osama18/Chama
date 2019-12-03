@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Chama.Common.Logging" Version="1.0.1" />
     <PackageReference Include="Chamma.Common.Settings" Version="1.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
@@ -15,9 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Chama.ApplicatoionServices.StudentsServices\Chama.ApplicatoionServices.StudentsServices.csproj" />
+    <ProjectReference Include="..\Chama.Common.Logging\Chama.Common.Logging.csproj" />
     <ProjectReference Include="..\Chama.Dal.Containers\Chama.Dal.Containers.csproj" />
+    <ProjectReference Include="..\Chamma.Common.Settings\Chamma.Common.Settings.csproj" />
     <ProjectReference Include="..\CoursesDB\Chama.Dal.DB.csproj" />
-    <ProjectReference Include="..\GenerIcRepository\Chama.Dal.GenerIcRepository.csproj" />
   </ItemGroup>
 
   <ItemGroup>

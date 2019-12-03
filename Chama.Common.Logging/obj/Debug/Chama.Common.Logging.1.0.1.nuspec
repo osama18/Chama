@@ -14,6 +14,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\oyassein\source\repos\CoursesDB\Chama.Common.Logging\bin\Debug\netcoreapp3.0\Chama.Common.Logging.dll" target="lib\netcoreapp3.0\Chama.Common.Logging.dll" />
+    <file src="C:\Work\Chama2\Chama.Common.Logging\bin\Debug\netcoreapp3.0\Chama.Common.Logging.dll" target="lib\netcoreapp3.0\Chama.Common.Logging.dll" />
   </files>
 </package>

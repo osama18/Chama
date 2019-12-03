@@ -1,16 +1,7 @@
-﻿using Chama.Dal.Containers;
-using Chamma.Common.Logging;
-using Chamma.Common.Settings;
-using CoursesDB;
+﻿using Chama.ApplicatoionServices.StudentsServices;
 using DBTester.IO;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using NetCore.AutoRegisterDi;
-using StructureMap;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Reflection;
 
@@ -24,8 +15,6 @@ namespace DBTester
 
         static void Main(string[] args)
         {
-            InitIoc();
-
             var commands = LoadCommads();
 
             ServeCustomer(commands);
@@ -63,6 +52,7 @@ namespace DBTester
 
         private static Dictionary<string,ICommad> LoadCommads()
         {
+            Init();
             var writer = serviceProvider.GetService<IWriter>();
             var command = serviceProvider.GetService<IViewContainerCommand>();
             var type = typeof(ICommad);
@@ -77,7 +67,7 @@ namespace DBTester
             return commands;
         }
 
-        private static void InitIoc()
+        private static void Init()
         {
             var configuration = new ConfigurationBuilder()
                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
@@ -88,7 +78,7 @@ namespace DBTester
                 .AddSingleton<IConfigurationRoot>(configuration)
                 .RegisterSettingsProvider()
                 .RegisterLoggers()
-                .RegisterGenerIcRepository();
+                .RegisterStudentsServices();
 
             services.RegisterAssemblyPublicNonGenericClasses(
                      Assembly.GetAssembly(typeof(Program)))

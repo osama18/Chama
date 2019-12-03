@@ -1,17 +1,93 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\Chama\\DBTester\\DBTester.csproj": {}
+    "C:\\Work\\Chama2\\DBTester\\DBTester.csproj": {}
   },
   "projects": {
-    "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
-      "version": "1.0.3",
+    "C:\\Work\\Chama2\\Chama.ApplicatoionServices.StudentsServices\\Chama.ApplicatoionServices.StudentsServices.csproj": {
+      "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj",
-        "projectName": "Chama.Dal.Containers",
-        "projectPath": "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj",
+        "projectUniqueName": "C:\\Work\\Chama2\\Chama.ApplicatoionServices.StudentsServices\\Chama.ApplicatoionServices.StudentsServices.csproj",
+        "projectName": "Chama.ApplicatoionServices.StudentsServices",
+        "projectPath": "C:\\Work\\Chama2\\Chama.ApplicatoionServices.StudentsServices\\Chama.ApplicatoionServices.StudentsServices.csproj",
         "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Chama\\Chama.Dal.Containers\\obj\\",
+        "outputPath": "C:\\Work\\Chama2\\Chama.ApplicatoionServices.StudentsServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\oyassein\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Nuggets": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\work\\nuget_repo": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Work\\Chama2\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj": {
+                "projectPath": "C:\\Work\\Chama2\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Chama.Common.Logging": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Chama.Common.Mapping": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj": {
+      "version": "1.0.1",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
+        "projectName": "Chama.Common.Logging",
+        "projectPath": "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
+        "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Chama2\\Chama.Common.Logging\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -44,13 +120,77 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
+      "version": "1.0.3",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj",
+        "projectName": "Chama.Dal.Containers",
+        "projectPath": "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj",
+        "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Chama2\\Chama.Dal.Containers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\oyassein\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Nuggets": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\work\\nuget_repo": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj": {
+                "projectPath": "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
             "Chama.Common.Logging": {
               "target": "Package",
               "version": "[1.0.1, )"
-            },
-            "Chama.Dal.DB": {
-              "target": "Package",
-              "version": "[1.0.0, )"
             },
             "Microsoft.Azure.Cosmos": {
               "target": "Package",
@@ -84,14 +224,82 @@
         }
       }
     },
-    "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj": {
+    "C:\\Work\\Chama2\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj": {
+      "version": "1.0.2",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Chama2\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj",
+        "projectName": "Chamma.Common.Settings",
+        "projectPath": "C:\\Work\\Chama2\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj",
+        "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Chama2\\Chamma.Common.Settings\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\oyassein\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Nuggets": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\work\\nuget_repo": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj",
+        "projectUniqueName": "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj",
         "projectName": "Chama.Dal.DB",
-        "projectPath": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj",
+        "projectPath": "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj",
         "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Chama\\CoursesDB\\obj\\",
+        "outputPath": "C:\\Work\\Chama2\\CoursesDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -164,14 +372,14 @@
         }
       }
     },
-    "C:\\Work\\Chama\\DBTester\\DBTester.csproj": {
+    "C:\\Work\\Chama2\\DBTester\\DBTester.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Chama\\DBTester\\DBTester.csproj",
+        "projectUniqueName": "C:\\Work\\Chama2\\DBTester\\DBTester.csproj",
         "projectName": "DBTester",
-        "projectPath": "C:\\Work\\Chama\\DBTester\\DBTester.csproj",
+        "projectPath": "C:\\Work\\Chama2\\DBTester\\DBTester.csproj",
         "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Chama\\DBTester\\obj\\",
+        "outputPath": "C:\\Work\\Chama2\\DBTester\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -193,14 +401,20 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
-                "projectPath": "C:\\Work\\Chama\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj"
+              "C:\\Work\\Chama2\\Chama.ApplicatoionServices.StudentsServices\\Chama.ApplicatoionServices.StudentsServices.csproj": {
+                "projectPath": "C:\\Work\\Chama2\\Chama.ApplicatoionServices.StudentsServices\\Chama.ApplicatoionServices.StudentsServices.csproj"
               },
-              "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj": {
-                "projectPath": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj"
+              "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj": {
+                "projectPath": "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj"
               },
-              "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj": {
-                "projectPath": "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj"
+              "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
+                "projectPath": "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj"
+              },
+              "C:\\Work\\Chama2\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj": {
+                "projectPath": "C:\\Work\\Chama2\\Chamma.Common.Settings\\Chamma.Common.Settings.csproj"
+              },
+              "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj": {
+                "projectPath": "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj"
               }
             }
           }
@@ -214,10 +428,6 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
-            "Chama.Common.Logging": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
             "Chamma.Common.Settings": {
               "target": "Package",
               "version": "[1.0.2, )"
@@ -258,14 +468,14 @@
         }
       }
     },
-    "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj": {
+    "C:\\Work\\Chama2\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj": {
       "version": "1.0.2",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj",
+        "projectUniqueName": "C:\\Work\\Chama2\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj",
         "projectName": "Chama.Dal.GenerIcRepository",
-        "projectPath": "C:\\Work\\Chama\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj",
+        "projectPath": "C:\\Work\\Chama2\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj",
         "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Chama\\GenerIcRepository\\obj\\",
+        "outputPath": "C:\\Work\\Chama2\\GenerIcRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -286,7 +496,11 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
+                "projectPath": "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -301,10 +515,6 @@
             "Chama.Common.Logging": {
               "target": "Package",
               "version": "[1.0.1, )"
-            },
-            "Chama.Dal.Containers": {
-              "target": "Package",
-              "version": "[1.0.3, )"
             },
             "Microsoft.AspNet.WebApi.OData": {
               "target": "Package",

@@ -6069,11 +6069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj",
+      "projectUniqueName": "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj",
       "projectName": "Chama.Dal.DB",
-      "projectPath": "C:\\Work\\Chama\\CoursesDB\\Chama.Dal.DB.csproj",
+      "projectPath": "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj",
       "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\Chama\\CoursesDB\\obj\\",
+      "outputPath": "C:\\Work\\Chama2\\CoursesDB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

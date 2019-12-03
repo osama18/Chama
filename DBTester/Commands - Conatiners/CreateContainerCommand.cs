@@ -1,11 +1,6 @@
 ﻿using Chama.Dal.Containers.Client;
 using Chamma.Common.Settings;
-using CoursesDB.Client;
-using CoursesDB.Client.Model;
 using DBTester.IO;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DBTester
 {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\Chama\\Chama.Common.Logging\\Chama.Common.Logging.csproj": {}
+    "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj": {}
   },
   "projects": {
-    "C:\\Work\\Chama\\Chama.Common.Logging\\Chama.Common.Logging.csproj": {
+    "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj": {
       "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Chama\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
+        "projectUniqueName": "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
         "projectName": "Chama.Common.Logging",
-        "projectPath": "C:\\Work\\Chama\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
+        "projectPath": "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Logging.csproj",
         "packagesPath": "C:\\Users\\oyassein\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Chama\\Chama.Common.Logging\\obj\\",
+        "outputPath": "C:\\Work\\Chama2\\Chama.Common.Logging\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

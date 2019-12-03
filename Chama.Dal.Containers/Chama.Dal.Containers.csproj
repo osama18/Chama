@@ -8,10 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Chama.Common.Logging" Version="1.0.1" />
-    <PackageReference Include="Chama.Dal.DB" Version="1.0.0" />
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.4.1" />
     <PackageReference Include="Microsoft.Azure.DocumentDB" Version="2.9.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoursesDB\Chama.Dal.DB.csproj" />
   </ItemGroup>
 
 </Project>

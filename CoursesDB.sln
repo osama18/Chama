@@ -35,11 +35,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Dal.GenerIcRepository
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.ApplicatoionServices.SubScribtionsServices", "Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.SubScribtionsServices.csproj", "{3AB00236-2BEE-497D-9392-B3A9AE6FEA91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.ApplicatinServices.Courses.Test", "Chama.ApplicatinServices.Courses.Test\Chama.ApplicatinServices.Courses.Test.csproj", "{A40E1BE0-57A8-4143-9071-F91EABAAE4BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.ApplicatinServices.Courses.Test", "Chama.ApplicatinServices.Courses.Test\Chama.ApplicatinServices.Courses.Test.csproj", "{A40E1BE0-57A8-4143-9071-F91EABAAE4BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chama.Web.SubscribtionV1", "Chama.Web.SubscribtionV1\Chama.Web.SubscribtionV1.csproj", "{2E29C86A-C234-40BB-8155-06921A08F025}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Web.SubscribtionV1", "Chama.Web.SubscribtionV1\Chama.Web.SubscribtionV1.csproj", "{2E29C86A-C234-40BB-8155-06921A08F025}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seed", "Seed\Seed.csproj", "{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seed", "Seed\Seed.csproj", "{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.ApplicatoionServices.CoursesServices", "Chama.ApplicatoionServices.CoursesServices\Chama.ApplicatoionServices.CoursesServices.csproj", "{59D3CB44-C8E0-4270-AAAA-B1F3ED95A7A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.ApplicatoionServices.StudentsServices", "Chama.ApplicatoionServices.StudentsServices\Chama.ApplicatoionServices.StudentsServices.csproj", "{B5833B02-3A3D-4106-936D-4AC1B5DC1FDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Common.Mapping", "Chama.Common.Mapping\Chama.Common.Mapping.csproj", "{B7E53440-FF96-4A1F-A7D3-91BE336BB1BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +97,18 @@ Global
 		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D3CB44-C8E0-4270-AAAA-B1F3ED95A7A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D3CB44-C8E0-4270-AAAA-B1F3ED95A7A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D3CB44-C8E0-4270-AAAA-B1F3ED95A7A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D3CB44-C8E0-4270-AAAA-B1F3ED95A7A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5833B02-3A3D-4106-936D-4AC1B5DC1FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5833B02-3A3D-4106-936D-4AC1B5DC1FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5833B02-3A3D-4106-936D-4AC1B5DC1FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5833B02-3A3D-4106-936D-4AC1B5DC1FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E53440-FF96-4A1F-A7D3-91BE336BB1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E53440-FF96-4A1F-A7D3-91BE336BB1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E53440-FF96-4A1F-A7D3-91BE336BB1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E53440-FF96-4A1F-A7D3-91BE336BB1BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +125,9 @@ Global
 		{A40E1BE0-57A8-4143-9071-F91EABAAE4BA} = {A1F0B478-FA94-40FE-B1DC-1A131427D632}
 		{2E29C86A-C234-40BB-8155-06921A08F025} = {E6219459-73FE-46F2-A494-FAFB92193B89}
 		{5E1C7EB8-302A-4FF1-8598-BC4F4B56C0FD} = {5785E193-B117-49DD-BD12-C70E6E2A769C}
+		{59D3CB44-C8E0-4270-AAAA-B1F3ED95A7A1} = {A1F0B478-FA94-40FE-B1DC-1A131427D632}
+		{B5833B02-3A3D-4106-936D-4AC1B5DC1FDA} = {A1F0B478-FA94-40FE-B1DC-1A131427D632}
+		{B7E53440-FF96-4A1F-A7D3-91BE336BB1BF} = {CC464C85-666E-44A9-BF1D-7F786BBB2E72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC0B38D5-C3C9-4215-AE0F-790A6D71500E}

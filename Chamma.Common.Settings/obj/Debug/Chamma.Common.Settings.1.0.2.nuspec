@@ -15,6 +15,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\oyassein\source\repos\CoursesDB\Chamma.Common.Settings\bin\Debug\netcoreapp3.0\Chamma.Common.Settings.dll" target="lib\netcoreapp3.0\Chamma.Common.Settings.dll" />
+    <file src="C:\Work\Chama2\Chamma.Common.Settings\bin\Debug\netcoreapp3.0\Chamma.Common.Settings.dll" target="lib\netcoreapp3.0\Chamma.Common.Settings.dll" />
   </files>
 </package>
