@@ -8,6 +8,10 @@ namespace Chama.ApplicatoionServices.StudentsServices
 {
     public class StudentsMapper : ObjectMapper, IStudentsMapper
     {
+        public StudentsMapper()
+        {
+            base.Configure();
+        }
         protected override void CreateMappings(AutoMapper.IMapperConfiguration cfg)
         {
             cfg.CreateMap<Student, StudentDto>();

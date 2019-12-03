@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Chama.Common.Logging
+namespace Chama.Common.Loggers
 {
     public interface ILogger
     {

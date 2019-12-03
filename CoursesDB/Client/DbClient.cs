@@ -1,4 +1,4 @@
-﻿using Chama.Common.Logging;
+﻿using Chama.Common.Loggers;
 using Chamma.Common.Settings;
 using CoursesDB.Client.Model;
 using Microsoft.Azure.Cosmos;

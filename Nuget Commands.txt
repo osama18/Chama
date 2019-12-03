@@ -1,5 +1,5 @@
 //Logging
-nuget add C:\Work\Chama\CoursesDB\Chama.Common.Logging\bin\Debug\Chama.Common.Logging.1.0.1.nupkg -source c:\work\nuget_repo
+nuget add C:\Work\Chama2\Chama.Common.Logging\bin\Debug\Chama.Common.Loggers.1.0.2.nupkg -source c:\work\nuget_repo
 
 //Settings
 nuget add C:\Work\Chama\CoursesDB\Chamma.Common.Settings\bin\Debug\Chamma.Common.Settings.1.0.0.nupkg -source c:\work\nuget_repo

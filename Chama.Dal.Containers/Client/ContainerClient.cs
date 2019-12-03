@@ -1,10 +1,12 @@
-﻿using Chama.Common.Logging;
+﻿
+
 using Chamma.Common.Settings;
 using Chama.Dal.Containers.Client.Model;
 using Microsoft.Azure.Cosmos;
 using System;
 using System.Threading.Tasks;
 using CoursesDB.Client;
+using Chama.Common.Loggers;
 
 namespace Chama.Dal.Containers.Client
 {

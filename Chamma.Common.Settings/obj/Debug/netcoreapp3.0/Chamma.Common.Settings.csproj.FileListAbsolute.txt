@@ -13,3 +13,4 @@ C:\Work\Chama2\Chamma.Common.Settings\obj\Debug\netcoreapp3.0\Chamma.Common.Sett
 C:\Work\Chama2\Chamma.Common.Settings\obj\Debug\netcoreapp3.0\Chamma.Common.Settings.AssemblyInfo.cs
 C:\Work\Chama2\Chamma.Common.Settings\obj\Debug\netcoreapp3.0\Chamma.Common.Settings.dll
 C:\Work\Chama2\Chamma.Common.Settings\obj\Debug\netcoreapp3.0\Chamma.Common.Settings.pdb
+C:\Work\Chama2\Chamma.Common.Settings\obj\Debug\netcoreapp3.0\Chamma.Common.Settings.csprojAssemblyReference.cache

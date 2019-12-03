@@ -1,4 +1,6 @@
-﻿using Chama.ApplicatoionServices.StudentsServices;
+﻿using Chama.ApplicatoionServices.CoursesServices;
+using Chama.ApplicatoionServices.CoursesServices.Dto;
+using Chama.ApplicatoionServices.StudentsServices;
 using Chama.ApplicatoionServices.StudentsServices.Dto;
 using Chama.Dal.Containers.Client;
 using Chamma.Common.Settings;
@@ -19,14 +21,15 @@ namespace DBTester
         private readonly IDBClient dbClient;
         private readonly IContainerClient containerClient;
         private readonly IStudentsServices studentsServices;
+        private readonly ICoursesServices coursesServices;
         
-
         public SeedDataBasesCommand(ISettingProvider settings,
             IWriter writer,
             IReader reader,
             IDBClient dbClient,
             IContainerClient containerClient,
-            IStudentsServices studentsServices)
+            IStudentsServices studentsServices,
+            ICoursesServices coursesServices)
         {
             this.settings = settings;
             this.writer = writer;
@@ -34,46 +37,58 @@ namespace DBTester
             this.dbClient = dbClient;
             this.containerClient = containerClient;
             this.studentsServices = studentsServices;
+            this.coursesServices = coursesServices;
         }
-
         public string Name { get => "Seed Databases"; }
-        public string Key { get => "c"; }
+        public string Key { get => "seed"; }
 
         public void Execute()
         {
-            string dbname = settings.GetSetting<string>("CoursesDbName");
-            string studentsCont = settings.GetSetting<string>("StudentsContainer");
-            string coursesCont = settings.GetSetting<string>("CoursesConatiner");
-            if (CreateDataBase(dbname))
+            var dbName = settings.GetSetting<string>("CoursesDbName");
+            var studentContainer = settings.GetSetting<string>("StudentsConatiner");
+            var courseContainer = settings.GetSetting<string>("CoursesConatiner");
+
+            if (CreateDataBase(dbName))
             {
-                if (CreateContainer(studentsCont,dbname))
+                if (CreateContainer(studentContainer, dbName))
                 {
-                    if (CreateContainer(coursesCont, dbname))
+                    if (CreateContainer(courseContainer,dbName))
                     {
-                        SeedStudents(studentsCont);
-                        SeeCourses(coursesCont);
+                        if (SeedData())
+                        {
+                            writer.Write("Seed completed");
+                        }
                     }
                 }
             }
         }
 
-        private bool SeeCourses(string container)
+        private bool SeedData()
         {
+            var studentId = studentsServices.Create(new StudentDto { 
+                Name = "Osama",
+                Age = 32
+            }).GetAwaiter().GetResult();
+
+
+            var courseId = coursesServices.Create(new CourseDto { 
+                Name = "Time managment",
+                Capacity = 10,
+                TeacheId = Guid.NewGuid(),
+                StudentsIds =new List<Guid> { studentId},
+            }).GetAwaiter().GetResult();
+
+            writer.Write($"{studentId.ToString()} subscribe to course {courseId}");
             return true;
         }
 
-        private void SeedStudents(string container)
-        {
-            studentsServices.Create(new StudentDto { Name = "Osama" , Age = 32});
-        }
-
-        private bool CreateContainer(string container, string dbName, string partionKey = "/id")
+        private bool CreateContainer(string container, string dbName, string partiotionKey = "/id")
         {
             var result = containerClient.CreateContainer(new Chama.Dal.Containers.Client.Model.CreateConatinerRequest
             {
                 DbName = dbName,
                 ConatinerId = container,
-                PartiotionKey = partionKey,
+                PartiotionKey = partiotionKey,
                 Throughput = 400
             }).GetAwaiter().GetResult();
 

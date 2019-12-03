@@ -1,4 +1,5 @@
-﻿using Chama.Common.Logging;
+﻿
+using Chama.Common.Loggers;
 using Chama.Dal.Containers.Client;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.Documents.Client;

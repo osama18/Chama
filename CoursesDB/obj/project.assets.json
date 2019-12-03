@@ -2,16 +2,16 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "Chama.Common.Logging/1.0.1": {
+      "Chama.Common.Loggers/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.1"
         },
         "compile": {
-          "lib/netcoreapp3.0/Chama.Common.Logging.dll": {}
+          "lib/netcoreapp3.0/Chama.Common.Loggers.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/Chama.Common.Logging.dll": {}
+          "lib/netcoreapp3.0/Chama.Common.Loggers.dll": {}
         }
       },
       "Chamma.Common.Settings/1.0.2": {
@@ -1723,15 +1723,15 @@
     }
   },
   "libraries": {
-    "Chama.Common.Logging/1.0.1": {
-      "sha512": "TrEKZPvZy4kUVSg6xsqYSkDIOsYb1xtTw4kIztFcnbbV9Mn5gOwXbM6bCLrSaViihcG2v30CrstGKFjAWMDCmw==",
+    "Chama.Common.Loggers/1.0.2": {
+      "sha512": "9tuUmOsdQiBgrzxagopU1KEctxlBVJWXwoEFkyXtsiLpKHhGPQiXa9L1jEz2ZLbh8ey1lFNaJnOm4v7t1a1ojw==",
       "type": "package",
-      "path": "chama.common.logging/1.0.1",
+      "path": "chama.common.loggers/1.0.2",
       "files": [
         ".nupkg.metadata",
-        "chama.common.logging.1.0.1.nupkg.sha512",
-        "chama.common.logging.nuspec",
-        "lib/netcoreapp3.0/Chama.Common.Logging.dll"
+        "chama.common.loggers.1.0.2.nupkg.sha512",
+        "chama.common.loggers.nuspec",
+        "lib/netcoreapp3.0/Chama.Common.Loggers.dll"
       ]
     },
     "Chamma.Common.Settings/1.0.2": {
@@ -6055,7 +6055,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "Chama.Common.Logging >= 1.0.1",
+      "Chama.Common.Loggers >= 1.0.2",
       "Chamma.Common.Settings >= 1.0.2",
       "Microsoft.Azure.Cosmos >= 3.4.1",
       "Microsoft.Azure.DocumentDB >= 2.9.2",
@@ -6106,9 +6106,9 @@
     "frameworks": {
       "netcoreapp3.0": {
         "dependencies": {
-          "Chama.Common.Logging": {
+          "Chama.Common.Loggers": {
             "target": "Package",
-            "version": "[1.0.1, )"
+            "version": "[1.0.2, )"
           },
           "Chamma.Common.Settings": {
             "target": "Package",

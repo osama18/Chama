@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Dal.DB", "CoursesDB\C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Chama.Common", "5-Chama.Common", "{CC464C85-666E-44A9-BF1D-7F786BBB2E72}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Common.Logging", "Chama.Common.Logging\Chama.Common.Logging.csproj", "{722AD6D2-64FA-4491-8AD2-344349B1F4B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chama.Common.Loggers", "Chama.Common.Logging\Chama.Common.Loggers.csproj", "{722AD6D2-64FA-4491-8AD2-344349B1F4B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Chama.SolutionsItems", "0-Chama.SolutionsItems", "{5785E193-B117-49DD-BD12-C70E6E2A769C}"
 	ProjectSection(SolutionItems) = preProject

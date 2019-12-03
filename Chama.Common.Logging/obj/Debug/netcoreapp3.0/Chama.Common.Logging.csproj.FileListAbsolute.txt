@@ -13,3 +13,4 @@ C:\Work\Chama2\Chama.Common.Logging\obj\Debug\netcoreapp3.0\Chama.Common.Logging
 C:\Work\Chama2\Chama.Common.Logging\obj\Debug\netcoreapp3.0\Chama.Common.Logging.AssemblyInfo.cs
 C:\Work\Chama2\Chama.Common.Logging\obj\Debug\netcoreapp3.0\Chama.Common.Logging.dll
 C:\Work\Chama2\Chama.Common.Logging\obj\Debug\netcoreapp3.0\Chama.Common.Logging.pdb
+C:\Work\Chama2\Chama.Common.Logging\obj\Debug\netcoreapp3.0\Chama.Common.Logging.csprojAssemblyReference.cache

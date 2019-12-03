@@ -10,12 +10,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Chama.Common.Logging" Version="1.0.1" />
-    <PackageReference Include="Chama.Common.Mapping" Version="1.0.0" />
+    <PackageReference Include="Chama.Common.Loggers" Version="1.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Chama.Common.Mapping\Chama.Common.Mapping.csproj" />
     <ProjectReference Include="..\GenerIcRepository\Chama.Dal.GenerIcRepository.csproj" />
   </ItemGroup>
 

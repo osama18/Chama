@@ -1,7 +1,17 @@
-﻿using Chama.ApplicatoionServices.StudentsServices;
+﻿using Chama.ApplicatoionServices.CoursesServices;
+using Chama.ApplicatoionServices.StudentsServices;
+using Chama.Common.Loggers;
+using Chamma.Common.Loggers;
+using Chamma.Common.Settings;
+
 using DBTester.IO;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using NetCore.AutoRegisterDi;
+
 using System;
 using System.Collections.Generic;
+
 using System.Linq;
 using System.Reflection;
 
@@ -15,6 +25,8 @@ namespace DBTester
 
         static void Main(string[] args)
         {
+            InitIoc();
+
             var commands = LoadCommads();
 
             ServeCustomer(commands);
@@ -52,7 +64,6 @@ namespace DBTester
 
         private static Dictionary<string,ICommad> LoadCommads()
         {
-            Init();
             var writer = serviceProvider.GetService<IWriter>();
             var command = serviceProvider.GetService<IViewContainerCommand>();
             var type = typeof(ICommad);
@@ -67,7 +78,7 @@ namespace DBTester
             return commands;
         }
 
-        private static void Init()
+        private static void InitIoc()
         {
             var configuration = new ConfigurationBuilder()
                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
@@ -77,8 +88,9 @@ namespace DBTester
                 .AddLogging()
                 .AddSingleton<IConfigurationRoot>(configuration)
                 .RegisterSettingsProvider()
-                .RegisterLoggers()
-                .RegisterStudentsServices();
+                .RegisterLoggeingServices()
+                .RegisterStudentsServices()
+                .RegisterCoursesServices();
 
             services.RegisterAssemblyPublicNonGenericClasses(
                      Assembly.GetAssembly(typeof(Program)))
@@ -87,6 +99,7 @@ namespace DBTester
             serviceProvider = services.BuildServiceProvider();
 
             var writer = serviceProvider.GetService<IWriter>();
+            var logger = serviceProvider.GetService<ILogger>();
             writer.Write("Container built");
         }
 
