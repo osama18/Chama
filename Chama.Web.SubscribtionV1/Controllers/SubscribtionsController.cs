@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Http.Description;
-using Chama.ApplicatoionServices.Courses;
-using Chama.ApplicatoionServices.Courses.Dtos;
+using Chama.ApplicatoionServices.SubScribtionsServices;
+using Chama.ApplicatoionServices.SubScribtionsServices.Dtos;
 using Chama.Common.Logging;
 using Chama.Web.SubscribtionV1.Requests;
-using Chamma.Common.Settings;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Chama.Web.SubscribtionV1.Controllers

@@ -132,3 +132,5 @@ C:\Work\Chama\DBTester\bin\Debug\netcoreapp3.0\Chama.Dal.DB.dll
 C:\Work\Chama\DBTester\bin\Debug\netcoreapp3.0\Chama.Dal.DB.pdb
 C:\Work\Chama\DBTester\bin\Debug\netcoreapp3.0\Chama.Dal.Containers.dll
 C:\Work\Chama\DBTester\bin\Debug\netcoreapp3.0\Chama.Dal.Containers.pdb
+C:\Work\Chama\DBTester\bin\Debug\netcoreapp3.0\Chama.Dal.GenerIcRepository.dll
+C:\Work\Chama\DBTester\bin\Debug\netcoreapp3.0\Chama.Dal.GenerIcRepository.pdb

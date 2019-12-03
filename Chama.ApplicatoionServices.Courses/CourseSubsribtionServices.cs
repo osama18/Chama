@@ -1,4 +1,5 @@
-﻿using Chama.ApplicatoionServices.Courses.Dtos;
+﻿
+using Chama.ApplicatoionServices.SubScribtionsServices.Dtos;
 using Chama.Common.Logging;
 using Chama.Dal.CourseSubsribtionServices.Model;
 using Chamma.Common.Settings;

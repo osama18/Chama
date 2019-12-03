@@ -1,4 +1,5 @@
-﻿using Chama.ApplicatoionServices.Courses.Dtos;
+﻿
+using Chama.ApplicatoionServices.SubScribtionsServices.Dtos;
 using System.Threading.Tasks;
 
 namespace Chama.ApplicatoionServices.SubScribtionsServices

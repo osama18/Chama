@@ -1,4 +1,5 @@
-using Chama.ApplicatoionServices.Courses;
+using Chama.ApplicatoionServices.SubScribtionsServices;
+using Chama.ApplicatoionServices.SubScribtionsServices.Dtos;
 using Chama.Common.Logging;
 using Chama.Dal.CourseSubsribtionServices.Model;
 using Chamma.Common.Settings;
@@ -44,7 +45,7 @@ namespace Chama.ApplicatinServices.Courses.Test
 
             var objectUnderTest = new CourseSubsribtionServices(coursesRepositotyMock.Object, loggerMock.Object, settingProviderMock.Object);
 
-            var result = await objectUnderTest.SubscribeAsync(new ApplicatoionServices.Courses.Dtos.CourseSubscribeRequest
+            var result = await objectUnderTest.SubscribeAsync(new CourseSubscribeRequest
             {
                 CourseId = Guid.NewGuid(),
                 StudentId = Guid.NewGuid()
@@ -86,7 +87,7 @@ namespace Chama.ApplicatinServices.Courses.Test
 
             var objectUnderTest = new CourseSubsribtionServices(coursesRepositotyMock.Object, loggerMock.Object, settingProviderMock.Object);
 
-            var result = await objectUnderTest.SubscribeAsync(new ApplicatoionServices.Courses.Dtos.CourseSubscribeRequest
+            var result = await objectUnderTest.SubscribeAsync(new CourseSubscribeRequest
             {
                 CourseId = Guid.NewGuid(),
                 StudentId = Guid.NewGuid()
