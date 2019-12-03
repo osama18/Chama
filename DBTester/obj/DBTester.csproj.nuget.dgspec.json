@@ -80,7 +80,7 @@
       }
     },
     "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Loggers.csproj": {
-      "version": "1.0.2",
+      "version": "2.0.0",
       "restore": {
         "projectUniqueName": "C:\\Work\\Chama2\\Chama.Common.Logging\\Chama.Common.Loggers.csproj",
         "projectName": "Chama.Common.Loggers",
@@ -144,7 +144,7 @@
       }
     },
     "C:\\Work\\Chama2\\Chama.Common.Mapping\\Chama.Common.Mapping.csproj": {
-      "version": "1.0.0",
+      "version": "2.0.0",
       "restore": {
         "projectUniqueName": "C:\\Work\\Chama2\\Chama.Common.Mapping\\Chama.Common.Mapping.csproj",
         "projectName": "Chama.Common.Mapping",
@@ -212,7 +212,7 @@
       }
     },
     "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
-      "version": "1.0.3",
+      "version": "2.0.0",
       "restore": {
         "projectUniqueName": "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj",
         "projectName": "Chama.Dal.Containers",
@@ -239,11 +239,7 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {
-              "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj": {
-                "projectPath": "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -257,7 +253,11 @@
           "dependencies": {
             "Chama.Common.Loggers": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[2.0.0, )"
+            },
+            "Chama.Dal.DB": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "Microsoft.Azure.Cosmos": {
               "target": "Package",
@@ -292,7 +292,7 @@
       }
     },
     "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj": {
-      "version": "1.0.0",
+      "version": "2.0.0",
       "restore": {
         "projectUniqueName": "C:\\Work\\Chama2\\CoursesDB\\Chama.Dal.DB.csproj",
         "projectName": "Chama.Dal.DB",
@@ -333,11 +333,11 @@
           "dependencies": {
             "Chama.Common.Loggers": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[2.0.0, )"
             },
             "Chamma.Common.Settings": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[2.0.0, )"
             },
             "Microsoft.Azure.Cosmos": {
               "target": "Package",
@@ -465,7 +465,7 @@
       }
     },
     "C:\\Work\\Chama2\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj": {
-      "version": "1.0.2",
+      "version": "2.0.0",
       "restore": {
         "projectUniqueName": "C:\\Work\\Chama2\\GenerIcRepository\\Chama.Dal.GenerIcRepository.csproj",
         "projectName": "Chama.Dal.GenerIcRepository",
@@ -492,11 +492,7 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {
-              "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj": {
-                "projectPath": "C:\\Work\\Chama2\\Chama.Dal.Containers\\Chama.Dal.Containers.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -510,7 +506,11 @@
           "dependencies": {
             "Chama.Common.Loggers": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[2.0.0, )"
+            },
+            "Chama.Dal.Containers": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "Microsoft.AspNet.WebApi.OData": {
               "target": "Package",

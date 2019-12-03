@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "Chamma.Common.Settings/1.0.2": {
+      "Chamma.Common.Settings/2.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Json": "3.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.1"
@@ -111,7 +111,7 @@
     }
   },
   "libraries": {
-    "Chamma.Common.Settings/1.0.2": {
+    "Chamma.Common.Settings/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

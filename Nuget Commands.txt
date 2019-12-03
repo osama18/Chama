@@ -1,23 +1,25 @@
 //Logging
-nuget add C:\Work\Chama2\Chama.Common.Logging\bin\Debug\Chama.Common.Loggers.1.0.2.nupkg -source c:\work\nuget_repo
+nuget add C:\Work\Chama2\Chama.Common.Logging\bin\Debug\Chama.Common.Loggers.2.0.0.nupkg -source c:\work\nuget_repo
 
 //Settings
-nuget add C:\Work\Chama\CoursesDB\Chamma.Common.Settings\bin\Debug\Chamma.Common.Settings.1.0.0.nupkg -source c:\work\nuget_repo
-
-//DbClient
-nuget add C:\Work\Chama\CoursesDB\bin\Debug\Chama.Dal.DB.1.0.0.nupkg -source c:\work\nuget_repo
-
-//Container
-nuget add C:\Work\Chama\Chama.Dal.Containers\bin\Debug\Chama.Dal.Containers.1.0.3.nupkg -source c:\work\nuget_repo
-
-//Repo
-nuget add C:\Work\Chama\GenerIcRepository\bin\Debug\Chama.Dal.GenerIcRepository.1.0.2.nupkg -source c:\work\nuget_repo
-
-//appserviceCourses
-nuget add C:\Work\Chama\Chama.ApplicatoionServices.Courses\bin\Debug\Chama.ApplicatoionServices.Courses.1.0.3.nupkg -source c:\work\nuget_repo
+nuget add C:\Work\Chama2\Chamma.Common.Settings\bin\Debug\Chamma.Common.Settings.2.0.0.nupkg -source c:\work\nuget_repo
 
 //mapping
-nuget add C:\Work\Chama\Chama.Common.Mapping\bin\Debug\Chama.Common.Mapping.1.0.0.nupkg -source c:\work\nuget_repo
+nuget add C:\Work\Chama2\Chama.Common.Mapping\bin\Debug\Chama.Common.Mapping.2.0.0.nupkg -source c:\work\nuget_repo
+
+//DbClient
+nuget add C:\Work\Chama2\CoursesDB\bin\Debug\Chama.Dal.DB.2.0.0.nupkg -source c:\work\nuget_repo
+
+//Container
+nuget add C:\Work\Chama2\Chama.Dal.Containers\bin\Debug\Chama.Dal.Containers.2.0.0.nupkg -source c:\work\nuget_repo
+
+//Repo
+nuget add C:\Work\Chama2\GenerIcRepository\bin\Debug\Chama.Dal.GenerIcRepository.2.0.0.nupkg -source c:\work\nuget_repo
+
+//appserviceCourses
+nuget add C:\Work\Chama2\Chama.ApplicatoionServices.Courses\bin\Debug\Chama.ApplicatoionServices.SubScribtionsServices.2.0.0.nupkg -source c:\work\nuget_repo
+
+
 
 
 

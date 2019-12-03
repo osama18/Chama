@@ -3,18 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Chama.Common.Loggers" Version="1.0.2" />
+    <PackageReference Include="Chama.Common.Loggers" Version="2.0.0" />
+    <PackageReference Include="Chama.Dal.DB" Version="2.0.0" />
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.4.1" />
     <PackageReference Include="Microsoft.Azure.DocumentDB" Version="2.9.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CoursesDB\Chama.Dal.DB.csproj" />
   </ItemGroup>
 
 </Project>

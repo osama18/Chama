@@ -11,9 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Chama.Common.Loggers" Version="1.0.2" />
+    <PackageReference Include="Chama.Common.Loggers" Version="2.0.0" />
     <PackageReference Include="Chama.Common.Logging" Version="1.0.1" />
-    <PackageReference Include="Chamma.Common.Settings" Version="1.0.2" />
+    <PackageReference Include="Chamma.Common.Settings" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
@@ -21,10 +21,6 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="4.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="4.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Chama.ApplicatoionServices.Courses\Chama.ApplicatoionServices.SubScribtionsServices.csproj" />
   </ItemGroup>
 
 </Project>

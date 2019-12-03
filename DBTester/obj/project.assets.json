@@ -11,31 +11,6 @@
           "lib/net45/AutoMapper.dll": {}
         }
       },
-      "Chama.Common.Logging/1.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.1"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Chama.Common.Logging.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Chama.Common.Logging.dll": {}
-        }
-      },
-      "Chama.Common.Mapping/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "AutoMapper": "4.2.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.1"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Chama.Common.Mapping.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Chama.Common.Mapping.dll": {}
-        }
-      },
       "Chamma.Common.Settings/1.0.2": {
         "type": "package",
         "dependencies": {
@@ -2485,8 +2460,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "Chama.Common.Logging": "1.0.1",
-          "Chama.Common.Mapping": "1.0.0",
+          "Chama.Common.Loggers": "1.0.2",
+          "Chama.Common.Mapping": "2.0.0",
           "Chama.Dal.GenerIcRepository": "1.0.2",
           "Newtonsoft.Json": "12.0.3"
         },
@@ -2497,7 +2472,7 @@
           "bin/placeholder/Chama.ApplicatoionServices.StudentsServices.dll": {}
         }
       },
-      "Chama.Common.Loggers/1.0.2": {
+      "Chama.Common.Loggers/2.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
@@ -2510,11 +2485,25 @@
           "bin/placeholder/Chama.Common.Loggers.dll": {}
         }
       },
+      "Chama.Common.Mapping/2.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "AutoMapper": "4.2.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Chama.Common.Mapping.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Chama.Common.Mapping.dll": {}
+        }
+      },
       "Chama.Dal.Containers/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "Chama.Common.Logging": "1.0.1",
+          "Chama.Common.Loggers": "1.0.2",
           "Chama.Dal.DB": "1.0.0",
           "Microsoft.Azure.Cosmos": "3.4.1",
           "Microsoft.Azure.DocumentDB": "2.9.2",
@@ -2531,7 +2520,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "Chama.Common.Logging": "1.0.1",
+          "Chama.Common.Loggers": "1.0.2",
           "Chamma.Common.Settings": "1.0.2",
           "Microsoft.Azure.Cosmos": "3.4.1",
           "Microsoft.Azure.DocumentDB": "2.9.2",
@@ -2548,7 +2537,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "Chama.Common.Logging": "1.0.1",
+          "Chama.Common.Loggers": "1.0.2",
           "Chama.Dal.Containers": "1.0.3",
           "Microsoft.AspNet.WebApi.OData": "5.7.0",
           "Microsoft.Azure.Cosmos": "3.4.1",
@@ -2582,28 +2571,6 @@
         "lib/net45/AutoMapper.xml",
         "lib/portable-net45+win+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.dll",
         "lib/portable-net45+win+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.xml"
-      ]
-    },
-    "Chama.Common.Logging/1.0.1": {
-      "sha512": "TrEKZPvZy4kUVSg6xsqYSkDIOsYb1xtTw4kIztFcnbbV9Mn5gOwXbM6bCLrSaViihcG2v30CrstGKFjAWMDCmw==",
-      "type": "package",
-      "path": "chama.common.logging/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        "chama.common.logging.1.0.1.nupkg.sha512",
-        "chama.common.logging.nuspec",
-        "lib/netcoreapp3.0/Chama.Common.Logging.dll"
-      ]
-    },
-    "Chama.Common.Mapping/1.0.0": {
-      "sha512": "+xLNkqfbZ681n0L/7kdt0/vF3/eehMa5DSHDiuc6aQC1i1PWgQLYxYnIm+rJ7SgBmvXKU8hYqPZYalnfCd2PmA==",
-      "type": "package",
-      "path": "chama.common.mapping/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "chama.common.mapping.1.0.0.nupkg.sha512",
-        "chama.common.mapping.nuspec",
-        "lib/netcoreapp3.0/Chama.Common.Mapping.dll"
       ]
     },
     "Chamma.Common.Settings/1.0.2": {
@@ -7897,10 +7864,15 @@
       "path": "../Chama.ApplicatoionServices.StudentsServices/Chama.ApplicatoionServices.StudentsServices.csproj",
       "msbuildProject": "../Chama.ApplicatoionServices.StudentsServices/Chama.ApplicatoionServices.StudentsServices.csproj"
     },
-    "Chama.Common.Loggers/1.0.2": {
+    "Chama.Common.Loggers/2.0.0": {
       "type": "project",
       "path": "../Chama.Common.Logging/Chama.Common.Loggers.csproj",
       "msbuildProject": "../Chama.Common.Logging/Chama.Common.Loggers.csproj"
+    },
+    "Chama.Common.Mapping/2.0.0": {
+      "type": "project",
+      "path": "../Chama.Common.Mapping/Chama.Common.Mapping.csproj",
+      "msbuildProject": "../Chama.Common.Mapping/Chama.Common.Mapping.csproj"
     },
     "Chama.Dal.Containers/1.0.3": {
       "type": "project",
@@ -7921,7 +7893,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Chama.ApplicatoionServices.StudentsServices >= 1.0.1",
-      "Chama.Common.Loggers >= 1.0.2",
+      "Chama.Common.Loggers >= 2.0.0",
       "Chama.Dal.Containers >= 1.0.3",
       "Chama.Dal.DB >= 1.0.0",
       "Chamma.Common.Settings >= 1.0.2",
@@ -7955,7 +7927,11 @@
         "netcoreapp3.0"
       ],
       "sources": {
-        "c:\\work\\nuget_repo": {}
+        "C:\\Nuggets": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "c:\\work\\nuget_repo": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp3.0": {

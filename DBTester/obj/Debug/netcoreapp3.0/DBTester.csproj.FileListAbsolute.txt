@@ -145,7 +145,6 @@ C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\DBTester.runtimeconfig.dev.json
 C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\DBTester.dll
 C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\DBTester.pdb
 C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\AutoMapper.dll
-C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\Chama.Common.Logging.dll
 C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\Chama.Common.Mapping.dll
 C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\Chamma.Common.Settings.dll
 C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\System.Net.Http.Formatting.dll
@@ -249,3 +248,4 @@ C:\Work\Chama2\DBTester\obj\Debug\netcoreapp3.0\DBTester.AssemblyInfo.cs
 C:\Work\Chama2\DBTester\obj\Debug\netcoreapp3.0\DBTester.csproj.CopyComplete
 C:\Work\Chama2\DBTester\obj\Debug\netcoreapp3.0\DBTester.dll
 C:\Work\Chama2\DBTester\obj\Debug\netcoreapp3.0\DBTester.pdb
+C:\Work\Chama2\DBTester\bin\Debug\netcoreapp3.0\Chama.Common.Mapping.pdb
